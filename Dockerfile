@@ -3,7 +3,7 @@ FROM python:bullseye
 USER root
 RUN mkdir /data
 
-RUN echo ${{ env.PATTOKEN }}
+RUN echo test
 
 COPY . .
 
