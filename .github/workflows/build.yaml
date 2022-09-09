@@ -13,6 +13,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Checkout shared action library
+      uses: actions/checkout@v3
+      with:
+        repository: joro86/pipandgit
+        token: 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
+        path: actions-remote
     - uses: actions/checkout@v3
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
