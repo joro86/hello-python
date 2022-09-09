@@ -7,6 +7,7 @@ USER root
 RUN mkdir /data
 
 COPY . .
-RUN apt-get update && apt-get install -y git
+RUN apt-get -y update
+RUN apt-get -y install git
 
 RUN pip3 install -r requirements.txt
