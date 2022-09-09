@@ -5,7 +5,7 @@ RUN mkdir /data
 
 RUN echo test
 
-ARG myvalue="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"
+ARG GITLAB_TOKEN ="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"
 
 COPY . .
 
