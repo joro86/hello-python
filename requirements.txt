@@ -1,1 +1,1 @@
-git+https://${personalAccessToken}@github.com/joro86/pipandgit.git@0.0.15
+git+https://${GIT_PAT}@github.com/joro86/pipandgit.git@0.0.15
