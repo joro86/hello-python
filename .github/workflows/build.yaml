@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s) --pull --build-arg personalAccessToken=${{ secrets.PAT }
+      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s) --build-arg personalAccessToken=${{ secrets.PAT }}
