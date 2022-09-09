@@ -5,7 +5,8 @@ RUN mkdir /data
 COPY . .
 
 ARG personalAccessToken
-
+RUN apt-get -y update
+RUN apt-get -y install git
 
 ENV GIT_PAT ${personalAccessToken}
 
