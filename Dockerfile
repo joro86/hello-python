@@ -7,8 +7,12 @@ USER root
 RUN mkdir /data
 
 COPY . .
+
+
 RUN apt-get -y update
 RUN apt-get -y install git
 RUN pip install --upgrade pip
+
+RUN git clone https://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@github.com/joro86/pipandgit.git
 
 RUN pip3 install -r requirements.txt
